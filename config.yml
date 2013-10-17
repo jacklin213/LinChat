@@ -1,0 +1,44 @@
+#================== LinChat ==================#
+
+# Project page: http://dev.bukkit.org/server-mods/linchat
+# Copyright 2013 Licence LinCraft(林)
+# http://dev.bukkit.org/licenses/2049-lin-craft-license/
+# This is NOT a permissions plugin
+
+# Plugin settings
+Plugin:
+  Name: '&c[&aLinChat&c]'
+  Message:
+    Info: '&6'
+    Error: '&c'
+
+# Make LinChat your default chat plugin
+Default: true
+# Use linchat.chat permission to chat?
+ChatPerm: true
+# Allow nicknames? (Currently Not avaliable yet)
+# Command for nicknaming /linchat nick <player> <nickname>
+# Nicknames: false
+
+#======= Chat Settings =======#
+# Chat Tags
+# {chatcolor} - The color that the groups's messages are displayed in
+# {groupname} - The raw group name of the player 
+# {message}   - The message that is sent
+# {nickname}  - The display name of the player (If nicknames are disabled this will return {username})
+# {prefix}    - The prefix of the player
+# {suffix}    - The suffix of the player
+# {username}  - The players username
+# Default format for chatting
+Format: '{prefix}{nickname}{suffix}: {chatcolor}{message}'
+
+#====== Group Settings ======#
+# The groups listed bellow will generate a config file
+# The file willed be inside of plugins/LinChat/Groups
+# The file will be named whatever you have listed bellow
+# The file stores the prefix, suffix of the group
+Groups:
+- Default
+- Member
+- Moderator
+- Admin

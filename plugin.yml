@@ -1,0 +1,29 @@
+name: LinChat
+version: 1.0
+description: A Simple Chat plugin
+
+main: me.jacklin213.linchat.LinChat
+author: jacklin213
+
+commands:
+  linchat:
+    description: LinChat command base
+    aliases: lc
+    
+permissions:
+  linchat.op:
+    default: op
+    children:
+      linchat.chat: true
+      linchat.color: true
+      linchat.help: true
+      linchat.reload: true
+  linchat.chat:
+    default: op
+  linchat.color:
+    default: op
+  linchat.help:
+    default: op
+  linchat.reload:
+    default: op
+ 
